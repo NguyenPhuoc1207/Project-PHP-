@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="css\style.css">
+    <title>3S Mucsic</title>    
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/js.jsx"></script>
+</head>
+<header>
+     <!-- Top -->
+    <div id="top"  style="min-width: 800px;">
+        <a href="https://thanhhung2112.github.io/Login/?" target="_blank" class="login"><button>Login</button></a>
+        <div id="root__top__move-action">
+          <i class="fas fa-chevron-circle-left"></i>
+          <i class="fas fa-chevron-circle-right"></i>
+        </div>
+        <div id="root__top__user" style="background-color: rgb(40, 40, 40);">
+          <img src="img/thang.jpg" id="root__top__user__avatar">
+          <div id="root__top__user__name">
+            <a href="../profile/index.html">    
+            <span style="padding-left:5px ;">Thang</span>
+            <i class="fas fa-sort-down" style="padding-left:5px ;"></i></a>
+          </div>
+        </div>    
+    </div>
+</header>
+<body>
+    
+    <!-- middle -->
+    <div id="middle">
+        <div class="left">      
+            <div id="root">
+                <div id="root__left-sidebar"> 
+                    <ul id="root__left-sidebar__navigation">
+                        <li><img src="img/library.PNG"><span>Your library</span></li>
+                        <li><img  src="img/Premium.png"><span>Premium</span></li>
+                        <li id="Create_playlist-icon" ><img src="img/create-playlist.PNG"><span onclick="Show_createplaylist_tab()">Create Playlist</span></li>
+                        <li><img src="img/loveimg.jpg"><span>Liked Songs</span></li>
+                    </ul>
+                    
+                    <div id="root__left-sidebar__dashline">
+                        <hr/>
+                        <div id="root__left-sidebar__dashline__shadow"></div>
+                    </div>
+                    <div id="root__left-sidebar__my-playlists">
+                        <div class = "item">
+                            <a class = "sub-btn" onclick="Show_list_choice()">Indie</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a class = "sub-btn">Jonas Blue</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a class = "sub-btn">Kygo</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a class = "sub-btn">Lofi</a>
+                            <div class = "sub-menu">
+                                <a href = "##" class = "sub-item">Thêm vào danh sách</a>
+                                <a href = "##" class = "sub-item">Chuyển đến radio</a>
+                                <a href = "##" class = "sub-item">Xóa khỏi hồ sơ</a>
+                                <a href = "##" class = "sub-item">Chỉnh sửa</a>
+                                <a href = "##" class = "sub-item">Đổi tên</a>
+                                <a href = "##" class = "sub-item">Đặt thành riêng tư</a>
+                                <a href = "##" class = "sub-item">Tải xuống</a>
+                                <a href = "##" class = "sub-item">Chia sẻ</a>
+                            </div>
+                        </div>
+                        <div class = "item">
+                            <a href = "##">Tất cả playlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div id="Create-playlist">
+                <div class="mainplaylist">
+                    <div class="playlist-new">
+                        <h1 class="chu">Sửa thông tin chi tiết</h1>
+                            <img  onclick="Show_createplaylist_tab()" src="img/icons8-x-50.png" alt=""> 
+                    </div>
+                    <div class="tao">
+                        <img src="img/Screenshot 2022-10-22 101641.png" alt="">
+                        <div>
+                            <input class="tenplaylist" type="text" placeholder="Nhập tên playlist">
+                            <input class="mota" type="text" placeholder="Nhập mô tả playlist">
+                        </div>
+                    </div>
+                    <div class="nutthemplaylist">
+                        <button onclick="Show_createplaylist_tab()">Lưu</button>
+                    </div>
+                    <div class="dongcuoicung">
+                        <p>Bằng cách tiếp tục, bạn đồng ý cho phép Spotify truy cập vào 
+                            hình ảnh bạn đã chọn để tải lên. Vui lòng đảm bảo bạn có quyền tải lên hình ảnh.</p>
+                    </div>
+                </div>
+            </div>
+            <a href=""><img class="cover" src="img\cover2.png" alt="poster"></a>
+            
+            <div class="playlist-suggestion">
+                <div class="title">
+                    <a href="##" class="album-name">Suggestion</a>
+                </div>
+                <div class="all-playlist">
+                    <div class="playlist">
+                        <img src="img/loveimg.jpg" alt="">
+                        <h2>Liked Song</h2>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/Traveling.png" alt="">
+                        <h2>Traveling</h2>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/Rock.png" alt="">
+                        <h2>Rock</h2>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/Acoustic.png" alt="">
+                        <h2>Acoustic</h2>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/Coffee.png" alt="">
+                        <h2>Coffee</h2>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/Jazz.png" alt="">
+                        <h2>Jazz</h2>
+                    </div>      
+                </div>
+            </div>
+            <!-- Cóp từ đoạn ni -->
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Mới phát gần đây</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/gone.jpg" alt ="Album" />
+                        <h3>Gone</h3>
+                        <p>Rosé</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/hopenot.jpg" alt ="Album" />
+                        <h3>Hope Not</h3>
+                        <p>Blackpink</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img/money.jpg" alt ="Album" />
+                        <h3>MONEY</h3>
+                        <p>Lisa</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img/kickit.jpg" alt ="Album" />
+                        <h3>Kick It</h3>
+                        <p>Blackpink</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/lovetohateme.jpg" alt ="Album" />
+                        <h3>Love to Hate Me</h3>
+                        <p>Blackpink</p>
+                    </div>   
+                </div>
+            </div>
+            <div class="root__main-view__playlist-section" section-type="best-of-artist">
+                <div class="title">
+                    <a href="##" class="album-name">Top bài hát hôm nay</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="list-top-song">       
+                <ul class="top-tracks-song">
+                    <li class="index">
+                    <span>1</span>
+                    <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                    </li>
+                    <li class="list-song-img"><img src="img/28reason.jpg"></li>
+
+                    <li class="song-info">
+                    <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                    <span class="song-info_artist">Rosé (BlackPink)</span>
+                    </li>
+                    <li class="song-name">On The Ground</li>
+                    <li class="love-icon"><i class="fas fa-heart"></i></li>
+                    <li class="time-up"><span class="more__time">4:45</span></li>
+                </ul>
+                </div>
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>2</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon"><i class="far fa-heart"></i></li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div>
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>3</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon"><i class="fas fa-heart"></i></li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div> 
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>4</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon"><i class="fas fa-heart"></i></li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div>
+                <div class="list-top-song">       
+                    <ul class="top-tracks-song">
+                        <li class="index">
+                        <span>5</span>
+                        <img class="playing-gif" src="./assets/images/main-view/icon-playing.gif" style="display: none;">
+                        </li>
+                        <li class="list-song-img"><img src="img/28reason.jpg"></li>
+    
+                        <li class="song-info">
+                        <span class="song-info_name">On The Groundđsdsdsdsds</span>
+                        <span class="song-info_artist">Rosé (BlackPink)</span>
+                        </li>
+                        <li class="song-name">On The Ground</li>
+                        <li class="love-icon"><i class="far fa-heart"></i></li>
+                        <li class="time-up"><span class="more__time">4:45</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="top_singer">
+                <div class="title">
+                    <a href="##" class="album-name">Nghệ sĩ nổi bật</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="singer">
+                        <img src = "img\singer_vu.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Vũ</h3>
+                        <p style = "text-align: center;">745K người nghe hàng tháng</p>
+                    </div>
+                    <div class="singer">
+                        <img src = "img\singer_ed.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Ed Sheeran</h3>
+                        <p style = "text-align: center;">78.546K người nghe hàng tháng</p>
+                    </div>
+                    <a  class="singer">
+                        <img src = "img/img7.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Jisoo</h3>
+                        <p style = "text-align: center;">46.546K người nghe hàng tháng</p>
+                    </a>
+                    <div class="singer">
+                        <img src = "img\singer_rose.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">ROSÉ</h3>
+                        <p style = "text-align: center;">3.353K người nghe hàng tháng</p>
+                    </div>
+                    <div class="singer">
+                        <img src = "img\singer_billie.jpg" alt ="Singer" />
+                        <h3 style = "text-align: center;">Billie Eilish</h3>
+                        <p style = "text-align: center;">49.712K người nghe hàng tháng</p>
+                    </div>   
+                </div>
+            </div> 
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Mới phát gần đây</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/gone.jpg" alt ="Album" />
+                        <h3>Gone</h3>
+                        <p>Rosé</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/hopenot.jpg" alt ="Album" />
+                        <h3>Hope Not</h3>
+                        <p>Blackpink</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img/money.jpg" alt ="Album" />
+                        <h3>MONEY</h3>
+                        <p>Lisa</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img/kickit.jpg" alt ="Album" />
+                        <h3>Kick It</h3>
+                        <p>Blackpink</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/lovetohateme.jpg" alt ="Album" />
+                        <h3>Love to Hate Me</h3>
+                        <p>Blackpink</p>
+                    </div>   
+                </div>
+            </div> 
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Có thể bạn muốn nghe</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/playlist1.jpg" alt ="Album" />
+                        <h3>Mở đầu hoàn hảo</h3>
+                        <p>AMEE, ERIK, Hoàng Duyên</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist2.jpg" alt ="Album" />
+                        <h3>V-Pop: The A-List</h3>
+                        <p>Bích Phương, Hoàng Thùy Linh</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img/playlist3.jpg" alt ="Album" />
+                        <h3>Tỏ Tình Nhẹ Nhàng</h3>
+                        <p>Quân A.P, Changg, Hoàng Duyên</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img/playlist4.jpg" alt ="Album" />
+                        <h3>Nhạc Trẻ Gây Nghiện</h3>
+                        <p>AMEE, Quân A.P, ERIK</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist5.jpg" alt ="Album" />
+                        <h3>HIT-MAKER: Nổi Bậ...</h3>
+                        <p>LyLy, RIN9, Vương Anh Tú</p>
+                    </div>   
+                </div>
+            </div>  
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Nhạc mới mỗi ngày</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/playlist1 (1).jpg" alt ="Album" />
+                        <h3>Nhạc Việt Tháng 10/2022</h3>
+                        <p>Nguyên Hà, Đức Phúc, Bích Phương</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist2 (1).jpg" alt ="Album" />
+                        <h3>Nhạc Âu Mỹ Tháng 10/2022</h3>
+                        <p>Jeremy Zucker, Lil Nas X, Nicki Minaj</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img/playlist3 (1).jpg" alt ="Album" />
+                        <h3>Nhạc Hàn Tháng 10/2022</h3>
+                        <p>CL, aespa, Key</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img/playlist4 (1).jpg" alt ="Album" />
+                        <h3>Nhạc Hoa Tháng 10/2022</h3>
+                        <p>Trình Hưởng, PANTHEPACK, Sunnee Dương Vân Tình</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist5 (1).jpg" alt ="Album" />
+                        <h3>Indie Việt Tháng 10/2022</h3>
+                        <p>Duongg, Starry Night, Charles Huỳnh</p>
+                    </div>   
+                </div>
+            </div>
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Top 100</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/playlist1 (2).jpg" alt ="Album" />
+                        <h3>Top 100 Nhạc Dance Việt Nam Hay Nhất</h3>
+                        
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist2 (2).jpg" alt ="Album" />
+                        <h3>Top 100 Bài Hát Nhạc Trẻ Hay Nhất</h3>
+                        
+                    </div>
+                    <a  class="album">
+                        <img src = "img/playlist3 (2).jpg" alt ="Album" />
+                        <h3>Top 100 Pop Âu Mỹ Hay Nhất</h3>
+                        
+                    </a>
+                    <div class="album">
+                        <img src = "img/playlist4 (2).jpg" alt ="Album" />
+                        <h3>Top 100 Nhạc Electronic/Dance Âu Mỹ Hay</h3>
+                        
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist5 (2).jpg" alt ="Album" />
+                        <h3>Top 100 Nhạc Hàn Quốc Hay Nhất</h3>
+                        
+                    </div>   
+                </div>
+            </div>
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Mixtape Yêu Thích</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/playlist1 (4).jfif" alt ="Album" />
+                        <h3>SOOBIN, Binz, MCK</h3>
+                        
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist2 (1).jfif" alt ="Album" />
+                        <h3>Jack, Uyên Linh, Tino</h3>
+                        
+                    </div>
+                    <a  class="album">
+                        <img src = "img/playlist3.jfif" alt ="Album" />
+                        <h3>MCK, tlinh, Khắc Hưng</h3>
+                        
+                    </a>
+                    <div class="album">
+                        <img src = "img/playlist4.jfif" alt ="Album" />
+                        <h3>Rhymastic, Phương Ly, Touliver</h3>
+                        
+                    </div>
+                    <div class="album">
+                        <img src = "img/playlist5.jfif" alt ="Album" />
+                        <h3>Hương Ly, Huy Nam (A#), Trúc Nhân</h3>
+                        
+                    </div>   
+                </div>
+            </div>
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Thư giãn</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/trip.png" alt ="Album" />
+                        <h3>Cùng em</h3>
+                        <p>Kỉ niệm đẹp lưu lại trên nốt nhạc buồn ...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/smile.png" alt ="Album" />
+                        <h3>Ta Nói Nó Dzui</h3>
+                        <p>Cười như mọi ngày, cày như mọi người...</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img/alone.png" alt ="Album" />
+                        <h3>Phút cô đơn</h3>
+                        <p>Điều buồn nhất là lá là la la...</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img/Coffee.png" alt ="Album" />
+                        <h3>Coffee</h3>
+                        <p>Một chút nhạc cùng một tách cà phê ...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/guitar.jpg" alt ="Album" />
+                        <h3>Guitar</h3>
+                        <p>Một chút tiếng đàn cho ngày thư giãn ...</p>
+                    </div>   
+                </div>
+            </div>
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Anime</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/chainsaw.jpg" alt ="Album" />
+                        <h3>Chainsaw Man OST</h3>
+                        <p>Con người, ác quỷ, ai mới là kẻ đáng sợ...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/doremon.png" alt ="Album" />
+                        <h3>Doraemon OST</h3>
+                        <p>Mang cả thế giới tuổi thơ quay về...</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img/replay.jfif" alt ="Album" />
+                        <h3>Anime on Replay</h3>
+                        <p>Mix các bản hit đình đám...</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img/cat.jpg" alt ="Album" />
+                        <h3>Lofi</h3>
+                        <p>Nhạc anime, nhưng lại là Lofi...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/honey.jpg" alt ="Album" />
+                        <h3>Honeyworks</h3>
+                        <p>Giai điệu trong sáng và nhẹ nhàng...</p>
+                    </div>   
+                </div>
+            </div>
+            <div id="album-recomment">
+                <div class="title">
+                    <a href="##" class="album-name">Du lich</a>
+                    <a href="##" class="see-all">See all</a>
+                </div>
+                <div class="album-poster">  
+                    <div class="album">
+                        <img src = "img/citynight.jpg" alt ="Album" />
+                        <h3>Phố Xá Xôn Xao</h3>
+                        <p>Nhịp sống sôi động của đường phố.</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/phuot.jpg" alt ="Album" />
+                        <h3>#phượt</h3>
+                        <p>Những cung đường rộng mở để chinh phục...</p>
+                    </div>
+                    <a  class="album">
+                        <img src = "img/road.webp" alt ="Album" />
+                        <h3>Road Trip</h3>
+                        <p>Tiếp thêm năng lượng trên mọi nẻo đường...</p>
+                    </a>
+                    <div class="album">
+                        <img src = "img/tokyo.png" alt ="Album" />
+                        <h3>Trip to Tokyo</h3>
+                        <p>Soundtrack hoàn hảo giành cho...</p>
+                    </div>
+                    <div class="album">
+                        <img src = "img/thai.png" alt ="Album" />
+                        <h3>Trip to Thailand</h3>
+                        <p>Soundtrack hoàn hảo giành cho...</p>
+                    </div>   
+                </div>
+            </div>  
+        </div>
+        
+    </div>    
+</body>
+</html>
